@@ -7,9 +7,7 @@ const AboutMe = () => {
       <Card
        name="Gerbinguio Victorino"
        role="FRONTEND DEVELOPER"
-       welcomeMessage="Welcome to my space"
-       buttonText="Projects"
-/>
+       welcomeMessage="Welcome to my space"/>
       <DevPic 
       imageUrl="devPicture.png"
       alternative="Developer Picture"

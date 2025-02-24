@@ -1,6 +1,4 @@
 import Button from "./Button";
-
-
 interface ICustomCardProps {
   name: string;
   role: string;

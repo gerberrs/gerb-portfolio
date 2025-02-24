@@ -18,5 +18,4 @@ const Button = ({ buttonText, pageLink }: IButtonProps) => {
         </div>
     );
 };
-
 export default Button;
