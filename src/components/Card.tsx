@@ -1,15 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import Button from "./Button";
 
 
 interface ICustomCardProps {
   name: string;
   role: string;
   welcomeMessage: string;
-  buttonText: string;
 }
 
-const Card = ({ name, role, welcomeMessage, buttonText }: ICustomCardProps) => {
-  const navigate = useNavigate();
+const Card = ({ name, role, welcomeMessage}: ICustomCardProps) => {
   return (
     <div className="flex flex-col items-start justify-center w-full h-full p-20 rounded-2xl text-left">
       <p className="text-lg font-anton drop-shadow-lg opacity-75">
@@ -23,12 +21,10 @@ const Card = ({ name, role, welcomeMessage, buttonText }: ICustomCardProps) => {
       </div>
       <p className="text-lg mt-4 opacity-75 drop-shadow-md">
         {welcomeMessage}</p>
-      <button
-        className="mt-6 px-6 py-3 text-xl text-white bg-slate-900 rounded-full hover:bg-slate-800 transition"
-        onClick={() => navigate("/Projectss")}
-      >
-        {buttonText}
-      </button>
+      <Button
+      buttonText="Projects"
+      pageLink="Projectss"
+      />
     </div>
   );
 };
